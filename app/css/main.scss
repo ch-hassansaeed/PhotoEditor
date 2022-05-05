@@ -1,0 +1,181 @@
+// Colors
+$main-background: #022140;
+$navbar-background: #265077;
+
+$btn-primary: #2d5f5d;
+$btn-secondary: #1e4258;
+$btn-custom: #337ab7;
+
+body {
+  font-family: Helvetica, Verdana, sans-serif;
+  line-height: 1.5em;
+  height: 100%;
+}
+
+#imageContainer,
+#debugContainer {
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.column {
+  width: 48%;
+  margin: .5%;
+  border: 1px solid #000;
+  vertical-align: top;
+
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}
+
+#imageContainer {
+  img {
+    width: 100%;
+  }
+}
+
+#debugContainer {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#editorCanvas {
+  margin: auto;
+  border: 1px solid #85adad;
+}
+
+h1{
+  text-align: start;
+  margin: 0;
+  color: #0275d8;
+}
+.mt-1 {
+  margin-top: 5px;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.ml-1{
+  margin-left: 5px;
+}
+
+.ml-5{
+  margin-left: 20px;
+}
+
+.mr-1{
+  margin-right: 5px;
+}
+
+.mr-5{
+  margin-right: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.move-actions-buttons
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: center;
+}
+input[type=file]::file-selector-button {
+  background-color: $btn-custom;
+  color: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: darken($color: $btn-custom, $amount: 15);
+  text-decoration: underline;
+}
+.custom-file-upload {
+
+}
+button{
+  background-color: $btn-custom;  
+  width: 160px;
+  margin-left: 10px;
+  font-size: large !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 2px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 7px 10px 7px 10px;
+
+  transition: color .3s ease;
+
+  &:focus {
+      outline: none;
+  }
+  
+  &:disabled {
+      background-color: lighten($color: $btn-custom, $amount: 15);
+  }
+
+  &:hover { 
+      background-color: darken($color: $btn-custom, $amount: 15);
+  }
+}
+.move-actions-buttons button{
+  background-color: $btn-custom;  
+  width: 60px;
+  margin-left: 10px;
+  font-size: large !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 2px;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 7px 10px 7px 10px;
+
+  transition: color .3s ease;
+
+  &:focus {
+      outline: none;
+  }
+  
+  &:disabled {
+      background-color: lighten($color: $btn-custom, $amount: 15);
+  }
+
+  &:hover { 
+      background-color: darken($color: $btn-custom, $amount: 15);
+  }
+}
+#editor-toolbar{
+  position: relative;
+  padding-bottom: 4px;
+}
+.action-scale-print{
+  position: absolute;
+    top: 25px;
+}
+.image-scale{
+  width: 345px;
+}
